@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="" content="">
+    <meta name="" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="javascript" href="./javascript/scripts.js">
+</head>
+
+<body>
+    <header>
+        <table id="headerTable">
+            <tr>
+                <!--table holds logo -->
+                <td>
+                    <img class="logo" src="./assets/imgs/logo.jfif" alt="logo">
+                </td>
+                <!--table holds logo -->
+                <td align="right">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="#">About Me</a>
+                        <a href="contactMe.html">Contact Me</a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+        
+    </header>
+   
+    <script>
+        let getMain = document.body;
+
+        let newElement = document.createElement("h2");
+
+        let date = new Date();
+        let currentHour = date.getHours();
+        
+
+        let createTxtMsg;
+
+        if (currentHour >= 4 && currentHour < 10){
+            createTxtMsg = "Good morning!";
+        }else if (currentHour >= 10 && currentHour < 12){
+            createTxtMsg = "Good day!";
+        }else if (currentHour >= 12 && currentHour < 18){
+            createTxtMsg = "Good Afternoon!";
+        }else if (currentHour >= 18 && currentHour < 22){
+            createTxtMsg = "Good evening!";
+        }else if (currentHour >= 22 && currentHour < 4){
+            createTxtMsg = "Good Ninght!";
+        }else{
+            createTxtMsg = "Are you From a Differnt Timezone! :O"
+        }
+        
+        let createEleTxt = document.createTextNode(createTxtMsg);
+
+        newElement.appendChild(createEleTxt);
+
+        getMain.appendChild(newElement);
+
+        newElement.setAttribute("class", "welcome");
+
+        newElement.style.cssText = "text-align: center; font-size: 60px; fomt-family: ariel";
+
+
+    </script>
+     <main>
+        <h1>About Me</h1>
+        <br>
+        <im></im>
+        <br>
+        <h2>Profile</h2>
+        <img src="./assets/imgs/Snapchat-158133097.jpg" height="300px" width="300px">
+        <p id="name"></p>
+
+        <script src="./javascript/name.js"> 
+        
+       
+        </script>
+        <h2>Boi</h2>
+        <p id="bio"></p>
+        <script src="./javascript/scripts.js">   
+
+            
+        </script>
+
+        <h2>Educational Background</h2>
+        <img src="./assets/imgs/rosebank.jfif" height="=350px" width="350px">
+        <p id="edu"></p>
+
+        <script src="./javascript/edu.js">
+            
+        </script>
+        <h2>projects</h2>
+        <p id="projects"></p>
+
+        <script src="./javascript/projects.js">
+            
+        </script>
+
+            <h2>Contact Information</h2>
+            <p id="contact"></p>
+
+            <script src="./javascript/contact.js">
+                
+            </script>
+
+<a href="./contactMe.html">
+    <button class="btn"> Contact me </button>
+</a>
+
+    </main> 
+    <footer>
+        <ul>
+        <li class="footerText">Follow me on:
+            
+
+            <a href="https://www.facebook.com/"> <i class="fa fa-facebook" ></i> </a>
+             @Lebokhan Cele
+        </li>
+        
+        <li class="footerText">Follow me on:
+            <a href="https://www.snapchat.com"><i class="fa fa-instagram" ></i> </a>
+            @Lebokhan Cele
+        </li>
+        
+        <li class="footerText">Follow me on:
+            <a href="https://www.instagram.com/"><i class="fa fa-snapchat" ></i> </a>
+            @lcele826 
+             
+        </li>
+        <li class="footerText"> Contact me on
+            <a href="https://web.whatsapp.com/" ><i class="fa fa-whatsapp" ></i></a>
+            0794401573
+        </ul>
+    </footer>
+</body>
+</html>

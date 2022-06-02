@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+h1,h3,h4,p,a,button,input{
+    font-family: "Roboto", sans-serif;
+}
+
+#headerTable {
+    width: 100%;
+}
+.logo{
+    width: 50px;
+}
+main{
+    min-height: 100vh;
+}
+
+nav{
+    padding-right: 20px;
+    margin-right: 20px;
+    background-color: darkseagreen;
+
+    
+}
+a{
+    margin-right: 20px;
+    text-decoration:wavy;
+    color: black;
+    font-size: x-large;
+}
+h2{
+margin-right: 20px;
+text-decoration: underline;
+color: black;
+font-size: x-large;
+font-family: monospace;
+}
+video{
+    width: 100%;
+}
+
+#mainTable{
+    width: 100%;
+}
+
+#userImage{
+    width: 300px;
+    height: 400px;
+}
+
+.bioBox{
+    width: 70%;
+    text-align: left;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+
+
+}
+
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+
+}
+
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+.btn{
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 15px;
+    font-size: larger;
+    background-color: thistle;
+}
+.map{
+    filter: grayscale(0.2);
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border: 2px solid #ffffff;
+}
+@media(max-width:1100px){
+.map{
+    display: none;
+}
+}
+
+.footerText{
+    text-align: center;
+    color: cornsilk;
+  
+  }
+  
+  footer{
+    background-color: rosybrown;
+    height: 200px;
+  }
+
+ 
+  
+  #icon{
+    width: 25px;
+    height: 25px;
+    background-color: rosybrown;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
